@@ -1,0 +1,170 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Bipul 💛</title>
+
+<!-- 🌸 GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* Slides */
+.slide {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.active {
+  display: flex;
+}
+
+/* 🌸 Headings (cute cursive) */
+h1, h2 {
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 1px;
+}
+
+/* 💌 Text inside boxes + letter */
+p, .box {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+}
+
+/* Floating animation */
+.floating {
+  animation: floatText 3s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Slide 1 */
+#slide1 {
+  background: #fff3a6;
+}
+
+/* Clouds */
+.cloud {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  background: white;
+  border-radius: 50px;
+  animation: moveClouds 20s linear infinite;
+}
+
+.cloud::before, .cloud::after {
+  content: "";
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+
+.cloud::before {
+  width: 60px;
+  height: 60px;
+  top: -30px;
+  left: 20px;
+}
+
+.cloud::after {
+  width: 80px;
+  height: 80px;
+  top: -40px;
+  left: 50px;
+}
+
+@keyframes moveClouds {
+  from { transform: translateX(-200px); }
+  to { transform: translateX(120vw); }
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Slide 2 */
+#slide2 {
+  background: #ffd6e7;
+}
+
+/* Stars */
+.star {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #ff4d88;
+  transform: rotate(45deg);
+}
+
+/* Boxes */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 20px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Ribbon */
+.box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background: #ff9ecb;
+  top: 0;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Slide 3 */
+#slide3 {
+  background: #ffe6f0;
+}
+
+/* Slide 4 */
+#slide4 {
+  background: #fff0f5;
+}
+</style>
+</head>
+🌸 Font vibe breakdown (so you know 😌)
+Pacifico → cute handwritten (for “Bipul its for uhh 💛”)
+Quicksand → soft aesthetic text
+Poppins → clean base font
